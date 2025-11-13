@@ -1,0 +1,276 @@
+[
+  {
+    "id": "conv_hfe7mvc",
+    "messages": [
+      {
+        "speaker": "Clara",
+        "text": "Hello! I'm Clara, your virtual assistant for UtilityCo. I can help with billing, meter readings, appointments, and more, 24/7.",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T11:44:46.777Z"
+      },
+      {
+        "speaker": "Customer",
+        "text": "yes",
+        "at": "2025-11-11T11:44:50.303Z"
+      },
+      {
+        "speaker": "Clara",
+        "text": "Before we start, can I please confirm your account details? To proceed, please provide your Account Number or Full Postcode and House Number.",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T11:44:50.914Z"
+      },
+      {
+        "speaker": "Customer",
+        "text": "My account number is 3887110 but I can't remember my postcode right now.",
+        "at": "2025-11-11T11:44:56.055Z"
+      },
+      {
+        "speaker": "Clara",
+        "text": "Are you, or anyone in your household, experiencing a difficult situation right now that might affect your energy/water use, payment, or ability to communicate? This is confidential.",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T11:44:56.901Z"
+      },
+      {
+        "speaker": "Customer",
+        "text": "No, everything's fine",
+        "at": "2025-11-11T11:44:58.970Z"
+      },
+      {
+        "speaker": "Clara",
+        "text": "Great. How can I help you today?",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T11:44:59.823Z"
+      }
+    ],
+    "startedAt": "2025-11-11T11:44:46.777Z",
+    "endedAt": null,
+    "agents": {
+      "observer": "Observer Agent monitored the conversation for sentiment and keywords.",
+      "decision": "Decision Agent determined the user's intent and selected the appropriate response.",
+      "action": "Action Agent executed the response and provided the user with the requested information.",
+      "learning": "Learning Agent analyzed the conversation to improve future interactions."
+    }
+  },
+  {
+    "id": "conv_l819wiw",
+    "messages": [
+      {
+        "speaker": "Clara",
+        "text": "Hello! I'm Clara, your virtual assistant for UtilityCo. I can help with billing, meter readings, appointments, and more, 24/7.",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T11:55:01.553Z"
+      },
+      {
+        "speaker": "Customer",
+        "text": "test",
+        "at": "2025-11-11T11:55:04.815Z"
+      },
+      {
+        "speaker": "Clara",
+        "text": "Before we start, can I please confirm your account details? To proceed, please provide your Account Number or Full Postcode and House Number.",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T11:55:05.418Z"
+      },
+      {
+        "speaker": "Customer",
+        "text": "set",
+        "at": "2025-11-11T11:55:07.454Z"
+      },
+      {
+        "speaker": "Clara",
+        "text": "Are you, or anyone in your household, experiencing a difficult situation right now that might affect your energy/water use, payment, or ability to communicate? This is confidential.",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T11:55:08.053Z"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Yes, I need help",
+        "at": "2025-11-11T11:55:10.952Z"
+      },
+      {
+        "speaker": "Clara",
+        "text": "Great. How can I help you today?",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T11:55:11.569Z"
+      }
+    ],
+    "startedAt": "2025-11-11T11:55:01.553Z",
+    "endedAt": null,
+    "agents": {
+      "observer": "Observer Agent monitored the conversation for sentiment and keywords.",
+      "decision": "Decision Agent determined the user's intent and selected the appropriate response.",
+      "action": "Action Agent executed the response and provided the user with the requested information.",
+      "learning": "Learning Agent analyzed the conversation to improve future interactions."
+    }
+  },
+  {
+    "id": "conv_e80c61u",
+    "messages": [
+      {
+        "speaker": "Clara",
+        "text": "Hello! I'm Clara, your virtual assistant for UtilityCo. I can help with billing, meter readings, appointments, and more, 24/7.",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T11:57:14.496Z"
+      },
+      {
+        "speaker": "Customer",
+        "text": "hh",
+        "at": "2025-11-11T11:57:18.177Z"
+      },
+      {
+        "speaker": "Clara",
+        "text": "Before we start, can I please confirm your account details? To proceed, please provide your Account Number or Full Postcode and House Number.",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T11:57:19.061Z"
+      },
+      {
+        "speaker": "Customer",
+        "text": "dfgdfg",
+        "at": "2025-11-11T11:57:20.260Z"
+      },
+      {
+        "speaker": "Clara",
+        "text": "Are you, or anyone in your household, experiencing a difficult situation right now that might affect your energy/water use, payment, or ability to communicate? This is confidential.",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T11:57:21.139Z"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Yes, I need help",
+        "at": "2025-11-11T11:57:21.912Z"
+      },
+      {
+        "speaker": "Clara",
+        "text": "Great. How can I help you today?",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T11:57:22.529Z"
+      }
+    ],
+    "startedAt": "2025-11-11T11:57:14.496Z",
+    "endedAt": null,
+    "agents": {
+      "observer": "Observer Agent monitored the conversation for sentiment and keywords.",
+      "decision": "Decision Agent determined the user's intent and selected the appropriate response.",
+      "action": "Action Agent executed the response and provided the user with the requested information.",
+      "learning": "Learning Agent analyzed the conversation to improve future interactions."
+    }
+  },
+  {
+    "id": "conv_cw68423",
+    "messages": [
+      {
+        "speaker": "Clara",
+        "text": "Hello! I'm Clara, your virtual assistant for UtilityCo. I can help with billing, meter readings, appointments, and more, 24/7.",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T12:00:30.047Z"
+      },
+      {
+        "speaker": "Customer",
+        "text": "asdasd",
+        "at": "2025-11-11T12:00:31.466Z"
+      },
+      {
+        "speaker": "Clara",
+        "text": "Before we start, can I please confirm your account details? To proceed, please provide your Account Number or Full Postcode and House Number.",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T12:00:32.316Z"
+      },
+      {
+        "speaker": "Customer",
+        "text": "asdasd",
+        "at": "2025-11-11T12:00:33.287Z"
+      },
+      {
+        "speaker": "Clara",
+        "text": "Are you, or anyone in your household, experiencing a difficult situation right now that might affect your energy/water use, payment, or ability to communicate? This is confidential.",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T12:00:34.147Z"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Yes, I need help",
+        "at": "2025-11-11T12:00:34.809Z"
+      }
+    ],
+    "startedAt": "2025-11-11T12:00:30.047Z",
+    "endedAt": "2025-11-11T12:00:35.411Z",
+    "agents": {
+      "observer": "Observer Agent monitored the conversation for sentiment and keywords.",
+      "decision": "Decision Agent determined the user's intent and selected the appropriate response.",
+      "action": "Action Agent executed the response and provided the user with the requested information.",
+      "learning": "Learning Agent analyzed the conversation to improve future interactions."
+    }
+  },
+  {
+    "id": "conv_b95f1co",
+    "messages": [
+      {
+        "speaker": "Clara",
+        "text": "Hello! I'm Clara, your virtual assistant for UtilityCo. I can help with billing, meter readings, appointments, and more, 24/7.",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-11T12:11:03.364Z"
+      }
+    ],
+    "startedAt": "2025-11-11T12:11:03.364Z",
+    "endedAt": null,
+    "agents": {
+      "observer": "Observer Agent monitored the conversation for sentiment and keywords.",
+      "decision": "Decision Agent determined the user's intent and selected the appropriate response.",
+      "action": "Action Agent executed the response and provided the user with the requested information.",
+      "learning": "Learning Agent analyzed the conversation to improve future interactions."
+    }
+  },
+  {
+    "id": "conv_wyro1nl",
+    "messages": [
+      {
+        "speaker": "Clara",
+        "text": "Hello! I'm Clara, your virtual assistant for UtilityCo. I can help with billing, meter readings, appointments, and more, 24/7.",
+        "meta": {
+          "type": "bot"
+        },
+        "at": "2025-11-13T04:51:47.164Z"
+      }
+    ],
+    "startedAt": "2025-11-13T04:51:47.164Z",
+    "endedAt": null,
+    "agents": {
+      "observer": "Observer Agent monitored the conversation for sentiment and keywords.",
+      "decision": "Decision Agent determined the user's intent and selected the appropriate response.",
+      "action": "Action Agent executed the response and provided the user with the requested information.",
+      "learning": "Learning Agent analyzed the conversation to improve future interactions."
+    }
+  }
+]

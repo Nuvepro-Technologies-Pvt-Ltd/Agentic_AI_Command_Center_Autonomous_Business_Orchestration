@@ -1,0 +1,148 @@
+{
+  "id": "sarah",
+  "title": "Clara -> Sarah sample flow",
+  "nodes": [
+    {
+      "id": "greeting",
+      "speaker": "Clara",
+      "text": "Hello! I'm Clara, your virtual assistant for UtilityCo. I can help with billing, meter readings, appointments, and more, 24/7.",
+      "type": "bot",
+      "next": "auth_prompt"
+    },
+    {
+      "id": "auth_prompt",
+      "speaker": "Clara",
+      "text": "Before we start, can I please confirm your account details? To proceed, please provide your Account Number or Full Postcode and House Number.",
+      "type": "bot",
+      "expect_input": true,
+      "var": "account",
+      "next": "vulnerability"
+    },
+    {
+      "id": "vulnerability",
+      "speaker": "Clara",
+      "text": "Are you, or anyone in your household, experiencing a difficult situation right now that might affect your energy/water use, payment, or ability to communicate? This is confidential.",
+      "type": "bot",
+      "options": ["No, everything's fine", "Yes, I need help"],
+      "var": "vulnerability",
+      "next_map": {
+        "No, everything's fine": "intent_capture",
+        "Yes, I need help": "intent_capture"
+      }
+    },
+    {
+      "id": "intent_capture",
+      "speaker": "Clara",
+      "text": "Great. How can I help you today?",
+      "type": "bot",
+      "expect_input": true,
+      "var": "user_issue",
+      "next": "triage"
+    },
+    {
+      "id": "triage",
+      "speaker": "Clara",
+      "text": "I detected a technical fault (meter flashing red) and a billing concern. I'll run a quick smart meter check. Shall I start?",
+      "type": "bot",
+      "options": ["Yes please", "No thanks"],
+      "next_map": {"Yes please": "run_diag", "No thanks": "billing_offer"}
+    },
+    {
+      "id": "run_diag",
+      "speaker": "Clara",
+      "text": "Thank you for waiting. I have run the check and it seems the meter itself is working correctly, but the connection dropped briefly. I have reset the communications hub which should fix the flashing light. Please check your meter now.",
+      "type": "bot",
+      "next": "diag_result"
+    },
+    {
+      "id": "diag_result",
+      "speaker": "Clara",
+      "text": "Wonderful. Now regarding your bill. I see your last bill was £185. It was based on the half-hourly usage recorded up until yesterday. Would you like to view a breakdown of your usage graphs on the app, or an explanation of the peak vs. off-peak rates on your tariff?",
+      "type": "bot",
+      "next": "show_dd"
+    },
+    {
+      "id": "show_dd",
+      "speaker": "Clara",
+      "text": "Certainly. Your current monthly Direct Debit is £150.00, scheduled for the 1st of every month. I can recommend a new payment amount of £165.00 to help cover your recent usage. Would you like me to update it automatically now?",
+      "type": "bot",
+      "options": ["No thanks", "Update to £165"],
+      "next_map": {"No thanks": "handoff_prompt", "Update to £165": "dd_updated"}
+    },
+    {
+      "id": "dd_updated",
+      "speaker": "Clara",
+      "text": "Direct Debit updated to £165 (simulated). Anything else?",
+      "type": "bot",
+      "next": "handoff_prompt"
+    },
+    {
+      "id": "handoff_prompt",
+      "speaker": "Clara",
+      "text": "Moving to a specialist tariff like the EV rate often requires a quick check of your setup. I can't process the switch securely here, but I can connect you to a Human Agent in our Tariff Team who can help right now. They will see everything we've discussed. Would you like me to connect you?",
+      "type": "bot",
+      "options": ["Yes connect me", "No thanks"],
+      "next_map": {"Yes connect me": "handoff_to_agent", "No thanks": "end"}
+    },
+    {
+      "id": "handoff_to_agent",
+      "speaker": "system",
+      "text": "HANDOFF_TO_AGENT",
+      "type": "system",
+      "next": "agent_greeting"
+    },
+    {
+      "id": "agent_greeting",
+      "speaker": "Liam",
+      "text": "Hello Sarah, my name is Liam. I see Clara has fixed your meter light and you wanted to discuss moving to our Electric Vehicle (EV) specific tariff. Is that right?",
+      "type": "agent",
+      "next": "agent_q1"
+    },
+    {
+      "id": "agent_q1",
+      "speaker": "Liam",
+      "text": "That's exciting! I need to verify two things to ensure a smooth switch: Do you have a dedicated smart charger, and is your current meter setup able to support the Off-Peak hours?",
+      "type": "agent",
+      "options": ["Yes I have a smart charger", "No charger"],
+      "next_map": {"Yes I have a smart charger": "eligible", "No charger": "ineligible"}
+    },
+    {
+      "id": "eligible",
+      "speaker": "Liam",
+      "text": "No problem at all. I can look up your supply point details instantly... Okay, I see you are eligible! Your new EV rate will be £0.10 Off-Peak and £0.30 Peak. I've processed the switch which will take effect on [Date]. Shall I suggest a Direct Debit update to £210?",
+      "type": "agent",
+      "options": ["Yes update to 210", "No thanks"],
+      "next_map": {"Yes update to 210": "dd_agent_updated", "No thanks": "end_agent"}
+    },
+    {
+      "id": "dd_agent_updated",
+      "speaker": "Liam",
+      "text": "Direct Debit updated to £210. I also sent you a quick 2-minute tutorial link for Smart Energy Manager to your email. Anything else?",
+      "type": "agent",
+      "next": "end_agent"
+    },
+    {
+      "id": "end_agent",
+      "speaker": "Liam",
+      "text": "Consider it done. I've sent the link to your registered email. Enjoy your new EV tariff and have a great day, Sarah!",
+      "type": "agent",
+      "meta": {"endConversation": true},
+      "next": null
+    },
+    {
+      "id": "ineligible",
+      "speaker": "Liam",
+      "text": "It looks like you need a dedicated charger — I can send guidance on compatible chargers. Would you like that?",
+      "type": "agent",
+      "options": ["Yes send guidance", "No thanks"],
+      "next_map": {"Yes send guidance": "end_agent", "No thanks": "end_agent"}
+    },
+    {
+      "id": "end",
+      "speaker": "Clara",
+      "text": "Thanks for contacting us. If there is nothing else, have a great day!",
+      "type": "bot",
+      "meta": {"endConversation": true}
+    }
+  ]
+}
